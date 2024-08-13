@@ -43,8 +43,10 @@ for index,row in data.iterrows():
     isAcceptable = "No"
  if row["pollutant_avg"] < dangerous_thresholds[row["pollutant_id"]]:
     isAcceptable = "Yes"
- data.at[index,'isAcceptable'] = isAcceptable
  if np.isnan(row["pollutant_avg"]): isAcceptable = "nan"
+ 
+ data.at[index,'isAcceptable'] = isAcceptable
+ 
  
  
 # Data visualization
