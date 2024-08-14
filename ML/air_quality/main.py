@@ -57,7 +57,7 @@ data['isAcceptable'].value_counts().plot(kind='bar')
 plt.title('Count of Acceptable and Unacceptable Air Quality')
 plt.xlabel('isAcceptable')
 plt.ylabel('Count')
-plt.savefig('acceptable_air_quality_bar_chart.png')  # Save the bar chart as a PNG file
+plt.savefig('outputs/acceptable_air_quality_bar_chart.png')  # Save the bar chart as a PNG file
 plt.close()  # Close the figure
 print ('Saved bar chart')
 
@@ -65,7 +65,7 @@ print ('Saved bar chart')
 plt.figure(figsize=(8, 8))
 data['isAcceptable'].value_counts().plot(kind='pie', autopct='%1.1f%%')
 plt.title('Proportion of Acceptable and Unacceptable Air Quality')
-plt.savefig('acceptable_air_quality_pie_chart.png')  # Save the pie chart as a PNG file
+plt.savefig('outputs/acceptable_air_quality_pie_chart.png')  # Save the pie chart as a PNG file
 plt.close()  # Close the figure
 print('Saved pie chart')
 
@@ -103,7 +103,7 @@ sns.scatterplot(x='latitude', y='pollutant_avg', hue='isAcceptable', data=data_e
 plt.title('Latitude vs. Pollutant Average')
 plt.xlabel('Latitude')
 plt.ylabel('Pollutant Average')
-plt.savefig('pollutant_avg') # Save the plot as png file
+plt.savefig('outputs/pollutant_avg') # Save the plot as png file
 plt.close()  # Close the figure
 print('saved pollutant_avg')
 
@@ -113,7 +113,7 @@ sns.scatterplot(x='longitude', y='pollutant_avg', hue='isAcceptable', data=data_
 plt.title('Longitude vs. Pollutant Average')
 plt.xlabel('Longitude')
 plt.ylabel('Pollutant Average')
-plt.savefig('pollutant_avg_1')    #Save the plot as png file   
+plt.savefig('outputs/pollutant_avg_1')    #Save the plot as png file   
 plt.close()  # Close the figure
 print('saved pollutant_avg_1')
 
@@ -178,6 +178,6 @@ sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
 plt.title('Confusion Matrix')
 plt.xlabel('Predicted Label')
 plt.ylabel('True Label')
-plt.savefig('confusion_matrix')
+plt.savefig('outputs/confusion_matrix')
 print('saved confusion matrix')
 plt.close()  # Close the figure

@@ -1,6 +1,7 @@
-air_quality.py --main excutable
-air_quality.csv --dataset
+excutable : --- main.py
+dataset : --- air_quality.csv
 
-terminal-output.txt --contains recorded terminal output on execution of main executable
+outputs (generated on python- virtual environment): ---outputs (forlder)
 
-.png --files are outputs plots/charts created on main execution
+                                                    .png files contains saved images/charts
+                                                    console-output.txt contains terminal outputduring execution
